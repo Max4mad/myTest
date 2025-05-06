@@ -1,146 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed's Resume</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamed | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #333;
+    }
 
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-            background-color: #333; /* Change color to your preference */
-            color: #fff; /* Change color to your preference */
-            padding: 10px;
-            border-radius: 10px;
-            width: 80%;
-            max-width: 800px;
-        }
+    /* header {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    } */
+    header {
+    background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80'); /* Replace with your preferred image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    }
 
-        h1 {
-            margin: 0;
-            color: #fff; /* Change color to your preference */
-        }
+    .header-overlay {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay for readability */
+    padding: 40px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    }
 
-        h2 {
-            margin-top: 20px;
-            color: #333; /* Change color to your preference */
-        }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    header h1 {
+      font-size: 2.5rem;
+    }
 
-        li {
-            margin-bottom: 10px;
-        }
+    nav {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
 
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-        section {
-            width: 80%;
-            max-width: 800px;
-            margin-bottom: 20px;
-        }
-    </style>
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      color: #1e1e2f;
+      margin-bottom: 10px;
+      border-left: 5px solid #007BFF;
+      padding-left: 10px;
+    }
+
+    .projects, .skills, .education, .experience, .contact {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: '✔️';
+      margin-right: 10px;
+      color: #007BFF;
+    }
+
+    .project-item {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e1e2f;
+      color: white;
+    }
+
+    a {
+      color: #007BFF;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Mohamed's Resume</h1>
-        <p>Mogadishu, D.Yaqshiid, Towfiiq</p>
-        <p>Email: maxamadmah4d@gmail.com</p>
-        <p>Phone: +252 612 899481</p>
-        <p><a href="[Your LinkedIn Profile URL]" target="_blank">LinkedIn Profile</a></p>
-    </header>
+  <header>
+    <h1>Mohamed Mahad</h1>
+    <p>Mogadishu | maxamadmah4d@gmail.com | +252 612 899481</p>
+  </header>
 
-    <section>
-        <h2>Objective:</h2>
-        <p>Motivated and detail-oriented Computer Science student with a focus on software development and artificial intelligence seeking an internship position to apply and further develop technical skills.</p>
-    </section>
+  <nav>
+    <a href="#objective">Objective</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section>
-        <h2>Education:</h2>
-        <p>Bachelor of Science in Computer Science<br>
-        University of Somalia, Mogadishu, Somalia.<br>
-        Expected Graduation: August 2025</p>
-    </section>
+  <section id="objective">
+    <h2>Objective</h2>
+    <p>Motivated and detail-oriented Computer Science student with a passion for software development and AI, seeking opportunities to grow and apply skills in real-world settings.</p>
+  </section>
 
-    <section>
-        <h2>Relevant Courses:</h2>
-        <ul>
-            <li>Data Structures and Algorithms</li>
-            <li>Database Management Systems</li>
-            <li>Artificial Intelligence</li>
-            <li>Software Engineering</li>
-            <li>Web Development</li>
-        </ul>
-    </section>
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <p>BSc in Computer Science<br/>University of Somalia, Mogadishu<br/>Expected Graduation: August 2025</p>
+  </section>
 
-    <section>
-        <h2>Skills:</h2>
-        <p><strong>Programming Languages:</strong> Java, Python, C++</p>
-        <p><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Node.js, React</p>
-        <p><strong>Database:</strong> MySQL, MongoDB</p>
-        <p><strong>Tools and Frameworks:</strong> Git, Eclipse, Visual Studio Code</p>
-    </section>
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Java, Python, C++</li>
+      <li><strong>Web:</strong> HTML, CSS, JavaScript, React, Node.js</li>
+      <li><strong>Databases:</strong> MySQL, MongoDB</li>
+      <li><strong>Tools:</strong> Git, VS Code, Eclipse</li>
+    </ul>
+  </section>
 
-    <section class="project">
-        <h2>Projects:</h2>
-        <p><strong>Intelligent Chatbot (Artificial Intelligence course)</strong></p>
-        <ul>
-            <li>Developed a chatbot using natural language processing techniques in Python.</li>
-            <li>Implemented functionalities for conversation flow and context awareness.</li>
-        </ul>
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
 
-        <p><strong>E-commerce Website (Web Development course)</strong></p>
-        <ul>
-            <li>Created a responsive e-commerce website using HTML, CSS, and JavaScript.</li>
-            <li>Integrated backend functionality for user authentication and product management.</li>
-        </ul>
-    </section>
+    <div class="project-item">
+      <h3>🤖 Intelligent Chatbot</h3>
+      <p>Built using Python and NLP techniques to simulate human conversation, maintaining context across messages.</p>
+    </div>
 
-    <section class="experience">
-        <h2>Experience:</h2>
-        <p><strong>Intern, XYZ Tech Solutions, [City, Country]</strong></p>
-        <p>[Month Year] - [Month Year]</p>
-        <ul>
-            <li>Assisted in software testing and debugging.</li>
-            <li>Collaborated with the development team to enhance product features.</li>
-            <li>Conducted code reviews and provided feedback.</li>
-        </ul>
-    </section>
+    <div class="project-item">
+      <h3>🛒 E-commerce Website</h3>
+      <p>Developed a responsive web store using HTML, CSS, and JavaScript. Included login, product listings, and cart management.</p>
+    </div>
+  </section>
 
-    <section>
-        <h2>Extracurricular Activities:</h2>
-        <ul>
-            <li>Member, Computer Science Club, University of Somalia</li>
-            <li>Volunteer, Coding for Community, [City, Country]</li>
-        </ul>
-    </section>
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+    <p><strong>Intern, XYZ Tech Solutions</strong><br/>[Month Year] - [Month Year]</p>
+    <ul>
+      <li>Worked on feature enhancements with the development team.</li>
+      <li>Conducted testing and fixed software bugs.</li>
+      <li>Contributed to documentation and peer code reviews.</li>
+    </ul>
+  </section>
 
-    <section class="contact-info">
-        <h2>References:</h2>
-        <p>Available upon request.</p>
-    </section>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p><a href="mailto:maxamadmah4d@gmail.com">maxamadmah4d@gmail.com</a></p>
+    <p><a href="#" target="_blank">LinkedIn Profile</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Mohamed Mahad. All rights reserved.</p>
+  </footer>
 </body>
 </html>
