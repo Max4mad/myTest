@@ -26,11 +26,6 @@
       padding: 80px 20px;
     }
 
-    .header-info p {
-      margin: 5px 0;
-      font-size: 1rem;
-    }
-
     header h1 {
       font-size: 2.5rem;
     }
@@ -43,6 +38,10 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     nav a {
@@ -124,10 +123,6 @@
         font-size: 2rem;
       }
 
-      .header-info p {
-        font-size: 0.95rem;
-      }
-
       nav a {
         margin: 10px;
         font-size: 0.9rem;
@@ -138,11 +133,7 @@
 <body>
   <header>
     <h1>Mohamed Mahad</h1>
-    <div class="header-info">
-      <p>Mogadishu</p>
-      <p>📧 <a href="mailto:maxamadmah4d@gmail.com" style="color:white;">maxamadmah4d@gmail.com</a></p>
-      <p>📞 +252 612 899481</p>
-    </div>
+    <p>Mogadishu | maxamadmah4d@gmail.com | +252 612 899481</p>
   </header>
 
   <nav>
@@ -190,8 +181,8 @@
     </div>
   </section>
 
-  <section class="row-layout" id="experience">
-    <div>
+  <section class="row-layout">
+    <div id="experience">
       <h2>Experience</h2>
       <p><strong>Intern, XYZ Tech Solutions</strong><br/>[Month Year] - [Month Year]</p>
       <ul>
@@ -205,7 +196,7 @@
       <h2>Contact</h2>
       <p>📧 <a href="mailto:maxamadmah4d@gmail.com">maxamadmah4d@gmail.com</a></p>
       <p>💼 <a href="#" target="_blank">LinkedIn Profile</a></p>
-      <p>🔗 <a href="https://github.com/Max4mad/myTest" target="_blank">View My GitHub Repository</a></p>
+      <p>🔗 <a href="https://github.com/Max4mad/myTest" target="_blank">View My GitHub Repos</a></p>
     </div>
   </section>
 
